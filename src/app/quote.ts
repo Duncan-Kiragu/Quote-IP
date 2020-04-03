@@ -4,4 +4,4 @@ export class Quote {
       this.showName=false;
     }
   }
-  
+  /* Exporting classes */

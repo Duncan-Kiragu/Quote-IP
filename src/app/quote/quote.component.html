@@ -3,9 +3,28 @@
     <head>
       <title>QUOTiE BeTA</title>
       <link href="https://fonts.googleapis.com/css2?family=Gotu&family=Lobster&family=Pacifico&display=swap" rel="stylesheet">
+      <script>
+        $(document).ready(function(){
+          $("#myModal").modal('show');
+        });     
+      </script>
     </head>
     <body>
       <div class="container-fluid"><br><br>
+        <div id="myModal" class="modal fade">
+          <div class="modal-dialog">
+              <div class="modal-content">
+                  <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                      <h4 class="modal-title">Stay SAFE AGAINST COVID-19</h4>
+                  </div>
+                  <div class="modal-body">
+                      <p>STAY HOME. STAY SAFE</p>
+                      <p>LET POSITIVITY RULE EVEN IN THIS TOUGH TIMES</p>
+                  </div>
+              </div>
+          </div>
+        </div>
         <div id="container-fluid">
           <div style="background-color: transparent;text-align: center;padding-top: 40px;;" id="top">
             <h1 style="font-size: 50px;font-weight: bold;color: black;">QUOTiE BeTA</h1>
@@ -42,5 +61,6 @@
             </div>
           </div>
         </footer>  
+        <br>
     </body>
 </html>
