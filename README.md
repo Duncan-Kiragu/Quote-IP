@@ -8,6 +8,8 @@
 ## Description
 An application that displays pre-uploaded quotes and allows the user to add quotes to the application which are displayed on the web-app dashboard.), has the ability to upvote and downvote quotes, delete quotes and view the most upvoted quotes through a highlighting feature
 
+
+Link to the live site (*https://duncan-kiragu.github.io/Quote-IP/*)
 ## Setup/Installation Requirements
 Clone the project from github to your computer
 
