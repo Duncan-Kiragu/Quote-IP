@@ -7,13 +7,11 @@
         font-weight: bolder;
       }
     </style>
-  
     <body style="background-color: transparent;border: none;outline: none;text-align: center;color: black;"><br>
       <h2 style="font-size: 30px; color: black; font-weight: bolder;text-align: center;">NEW QUOTE</h2><br><hr>
       <div class="container-fluid">
       <form (ngsubmit)="submitQuote()" #quoteForm="ngForm">
           <div class="form-group">
-    
               <label for="description" style="font-size: 20px; color: aqua; outline-style: groove;"> ~QUOTE ~</label>
               <input style="outline-style: groove;color: blue;" type="text" placeholder="Input quote" class="form-control" id="description" [(ngModel)]="newQuote.description" name="description" #description="ngModel" required>
               <div [hidden]="description.valid || description.pristine"    
@@ -22,7 +20,6 @@
               </div>
           </div><br />
           <div class="form-group">
-    
               <label for="name" style="font-size: 20px; color: black;outline-style: groove;"> ~UPLOADER'S NAME~</label>
               <input style="outline-style: groove;color: black;" type="text" placeholder="Input uploader's name" id="name" [(ngModel)]="newQuote.name" name="name" #name="ngModel" class="form-control" required>
               <div [hidden]="name.valid || name.pristine"    
@@ -31,7 +28,6 @@
               </div>
           </div><br />
           <div class="form-group">
-    
             <label for="author" style="font-size: 20px; color: blue;outline-style: groove;">~AUTHOR'S NAME~</label>
             <input style="outline-style: groove;color: aqua;" type="text" placeholder="Input author's name" class="form-control" id="author" [(ngModel)]="newQuote.author" name="author" #author="ngModel" required>
             <div [hidden]="author.valid || author.pristine"    
@@ -39,7 +35,6 @@
               <p>AUTHOR'S NAME</p>
             </div>
         </div>
-        
           <button type="submit" class="btn btn-primary" (click)="submitQuote()">ADD</button> 
       </form>
       <br><br>
