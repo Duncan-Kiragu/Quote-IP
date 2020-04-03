@@ -1,0 +1,9 @@
+<!DOCTYPE html>
+<p>Uploaded by : {{quote.author}}</p>
+ <p>Stated by : {{quote.name}}</p>
+ 
+ <p>Was uploaded On:{{quote.uploadDate|date}} , {{quote.uploadDate|counter}} days ago</p><br/>
+ <p>{{quote.upvote}} Upvotes , {{quote.downvote}} Downvotes</p> 
+ <button id="upvote" (click)="upVote(true)" class="btn btn-primary btn-lg active">UPVOTE</button>
+ <button id="downvote" (click)="downVote(true)" class="btn btn-secondary btn-lg active">DOWNVOTE </button>
+ <button  (click)="deleteQuote(true)" class="btn btn-danger">DELETE</button>
