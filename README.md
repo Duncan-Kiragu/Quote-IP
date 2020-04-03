@@ -10,7 +10,11 @@ An application that displays pre-uploaded quotes and allows the user to add quot
 
 ## Setup/Installation Requirements
 Clone the project from github to your computer
+
+
 Install NodeJs and Angular-Cli to your computer.
+
+
 Follow the guidelines below after installations
 
 ## Development server
