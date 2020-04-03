@@ -1,11 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
-@import "~bootstrap/dist/css/bootstrap.css";
-@import url('https://fonts.googleapis.com/css2?family=Gotu&family=Pacifico&display=swap');
+    @import "~bootstrap/dist/css/bootstrap.css";
+    @import url('https://fonts.googleapis.com/css2?family=Gotu&family=Pacifico&display=swap');
 
-html,body{
-    font-family: 'Gotu', sans-serif ,'Lobster', cursive;;
-    background-image: url('assets/Wave-3.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-}
+    html,body{
+        font-family: 'Gotu', sans-serif ,'Lobster', cursive;;
+        background-image: url('assets/Wave-3.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
 
