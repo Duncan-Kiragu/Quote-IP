@@ -1,48 +1,46 @@
-  <!DOCTYPE html>
-    <html>
-        <head>
-          <title>QUOTiE BeTA</title>
-          <link href="https://fonts.googleapis.com/css2?family=Gotu&family=Lobster&family=Pacifico&display=swap" rel="stylesheet">
-        </head>
-        <body>
-          <div class="container-fluid"><br><br>
-            <div id="container-fluid">
-              <div style="background-color: transparent;text-align: center;padding-top: 40px;;" id="top">
-              <h1 style="font-size: 50px;font-weight: bold;color: black;">QUOTiE BeTA</h1>
-              <p style="position: center;color: #000;" class="intro"><em>A quote can change a life</em></p><br />
-              </div>
-              <h2 style="color: peru;text-align: center;text-decoration: blueviolet;">QUOTiE(S)</h2>
-              <div class="container-fluid">
-                <div class="row" style="font-size: 20px;">
-                  <div class="card-columns">
-                    <div class="card text-white bg-info mb-3" *ngFor="let quote of quotes ; let i = index">
-                      <div class="card-body">
-                        <em><p appHighlight *ngIf="highlightUpvote()===quote.upvote&& 
-                          quote.upvote>0">{{quote.description}}</p></em>
-                      </div>
-                    <div class="card-footer">
-                        <p *ngIf="highlightUpvote()!==quote.upvote || quote.upvote===0">{{quote.description}}</p>
-                        <button (click)= "toggleDetails(i)" class="btn btn-primary">Info</button> 
-
-                        <app-name *ngIf=quote.showName style="font-family: 'Lobster', cursive;" [quote]='quote' (isUpvote) ="addUpvote(i)" (isDownvote)="addDownvote(i)" (toDelete)="quoteDelete($event,i)"> </app-name>  
-                    </div>
+<!DOCTYPE html>
+<html>
+    <head>
+      <title>QUOTiE BeTA</title>
+      <link href="https://fonts.googleapis.com/css2?family=Gotu&family=Lobster&family=Pacifico&display=swap" rel="stylesheet">
+    </head>
+    <body>
+      <div class="container-fluid"><br><br>
+        <div id="container-fluid">
+          <div style="background-color: transparent;text-align: center;padding-top: 40px;;" id="top">
+            <h1 style="font-size: 50px;font-weight: bold;color: black;">QUOTiE BeTA</h1>
+            <p style="position: center;color: #000;" class="intro"><em>A quote can change a life</em></p><br />
+          </div>
+          <h2 style="color: peru;text-align: center;text-decoration: blueviolet;">QUOTiE(S)</h2>
+          <div class="container-fluid">
+            <div class="row" style="font-size: 20px;">
+              <div class="card-columns">
+                <div class="card text-white bg-info mb-3" *ngFor="let quote of quotes ; let i = index">
+                  <div class="card-body">
+                    <em><p appHighlight *ngIf="highlightUpvote()===quote.upvote&& 
+                      quote.upvote>0">{{quote.description}}</p></em>
+                  </div>
+                <div class="card-footer">
+                      <p *ngIf="highlightUpvote()!==quote.upvote || quote.upvote===0">{{quote.description}}</p>
+                      <button (click)= "toggleDetails(i)" class="btn btn-primary">Info</button> 
+                      <app-name *ngIf=quote.showName style="font-family: 'Lobster', cursive;" [quote]='quote' (isUpvote) ="addUpvote(i)" (isDownvote)="addDownvote(i)" (toDelete)="quoteDelete($event,i)"> </app-name>  
+                  </div>
                 </div>
               </div>
-              </div>
-              </div>
-              </div>
-          </div><br><br><br>
-          <div class="container">
-            <app-quote-form (addQuote)="addNewQuote ($event)" ></app-quote-form>
             </div>
-            <br>
-          <footer class="page-footer font-small special-color-dark pt-4">
-                <div class="container">
-                <div class="footer-copyright text-center ">© 2020 Copyright:
-                  <a href="github.com">QUOTiES BeTA</a>
-                </div>
-                </div>
-          </footer>
-          
-        </body>
-    </html>
+          </div>
+        </div>
+      </div><br><br><br>
+      <div class="container">
+          <app-quote-form (addQuote)="addNewQuote ($event)" ></app-quote-form>
+      </div>
+        <br>
+      <footer class="page-footer font-small special-color-dark pt-4">
+            <div class="container">
+              <div class="footer-copyright text-center ">© 2020 Copyright:
+                <a href="github.com">QUOTiES BeTA</a>
+              </div>
+            </div>
+      </footer>  
+    </body>
+</html>
