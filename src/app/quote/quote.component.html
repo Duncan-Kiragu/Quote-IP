@@ -23,24 +23,24 @@
                 <div class="card-footer">
                       <p *ngIf="highlightUpvote()!==quote.upvote || quote.upvote===0">{{quote.description}}</p>
                       <button (click)= "toggleDetails(i)" class="btn btn-primary">Info</button> 
-                      <app-name *ngIf=quote.showName style="font-family: 'Lobster', cursive;" [quote]='quote' (isUpvote) ="addUpvote(i)" (isDownvote)="addDownvote(i)" (toDelete)="quoteDelete($event,i)"> </app-name>  
+                        <app-name *ngIf=quote.showName style="font-family: 'Lobster', cursive;" [quote]='quote' (isUpvote) ="addUpvote(i)" (isDownvote)="addDownvote(i)" (toDelete)="quoteDelete($event,i)"> </app-name>  
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
+        </div><br><br><br>
+        <div class="container">
+            <app-quote-form (addQuote)="addNewQuote ($event)" ></app-quote-form>
         </div>
-      </div><br><br><br>
-      <div class="container">
-          <app-quote-form (addQuote)="addNewQuote ($event)" ></app-quote-form>
-      </div>
-        <br>
-      <footer class="page-footer font-small special-color-dark pt-4">
-            <div class="container">
-              <div class="footer-copyright text-center ">© 2020 Copyright:
-                <a href="github.com">QUOTiES BeTA</a>
-              </div>
+          <br>
+        <footer class="page-footer font-small special-color-dark pt-4">
+          <div class="container">
+            <div class="footer-copyright text-center ">© 2020 Copyright:
+              <a href="github.com">QUOTiES BeTA</a>
             </div>
-      </footer>  
+          </div>
+        </footer>  
     </body>
 </html>
